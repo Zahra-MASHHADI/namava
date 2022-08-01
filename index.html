@@ -1,0 +1,206 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نماوا</title>
+</head>
+<style>
+    body{
+        direction: rtl;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        margin: 0;
+        padding: 0;
+    }
+    .list .container{
+       width: 1400px;
+       margin: 0 auto;
+    }
+    .list .movie-list .flex{
+        display: flex;
+        justify-content:center;
+        flex-direction: row;
+        grid-gap: 10px;
+    }
+    .list .movie-list .movie img{
+        width: 191px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        
+        
+    }
+    .list .movie-list .movie {
+        position: relative;
+    }
+    .list .movie-list .movie:hover .content{
+        opacity: 1;
+    }
+    .list .movie-list .movie .content{
+        position:absolute;
+        bottom: 60;
+        right:0;
+        width: 100%;
+        height: 82.5%;
+        color: #fff;
+        background-color: rgba(5, 5, 5, 0.781);
+        opacity: 0;
+        transition: all 1s;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+    }
+    .list .movie-list .movie .content p{
+        padding: 200px 10px 0 0;
+    }
+    .list .movie-list .movie .content span{
+        padding-right: 10px;
+    }
+</style>
+
+<body>
+    <div class="list">
+        <div class="container">
+            <div class="movie-list">
+                <h2> ایرانی</h2>
+                <div class="flex">
+                    <div class="movie">
+                        <div class="img">
+                            <img src="assets/irani1.jpg" alt="شبکه مخفی زنان"/>
+                        </div>
+                        <h3>شبکه مخفی زنان</h3>
+                        <div class="content">
+                            <p>سریال-1401</p>
+                            <span>82%</span>
+                        </div>
+                    </div>
+                        <div class="movie">
+                        <div class="img">
+                        <img src="assets/irani2.jpg" alt="روزی روزگاری مریخ"/>
+                    </div>
+                        <h3>روزی روزگاری مریخ</h3>
+                        <div class="content">
+                            <p>سریال-1401</p>
+                            <span>82%</span>
+                        </div>
+                        </div>
+                        <div class="movie">
+                        <div class="img">
+                        <img src="assets/irani3.jpg" alt="۱۳ شمالی"/>
+                    </div>
+                        <h3>۱۳ شمالی</h3>
+                        <div class="content">
+                            <p>سریال-1397</p>
+                            <span>82%</span>
+                        </div>
+                    </div>
+                        <div class="movie">
+                        <div class="img">
+                        <img src="assets/irani4.jpg" alt="جادوگر"/>
+                    </div>
+                        <h3>جادوگر</h3>
+                        <div class="content">
+                            <p>سریال-1400</p>
+                            <span>82%</span>
+                        </div>
+                    </div>
+                        <div class="movie">
+                        <div class="img">
+                        <img src="assets/irani5.jpg" alt="نوبت لیلی"/>
+                    </div>
+                        <h3>نوبت لیلی</h3>
+                        <div class="content">
+                            <p>سریال-1401</p>
+                            <span>82%</span>
+                        </div>
+                    </div>
+                        <div class="movie">
+                        <div class="img">
+                        <img src="assets/irani6.jpg" alt="مهمونی"/>
+                    </div>
+                        <h3>مهمونی</h3>
+                        <div class="content">
+                            <p>سریال-1401</p>
+                            <span>82%</span>
+                        </div>
+                    </div>
+                        <div class="movie">
+                        <div class="img">
+                        <img src="assets/irani7.jpg" alt="حرفه ای"/>
+                    </div>
+                        <h3>)حرفه ای (ویژه ناشنوایان</h3>
+                        <div class="content">
+                            <p>سریال-1400</p>
+                            <span>82%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let movie = [
+            {
+                title:"شبکه مخفی زنان",
+                Image:"http://127.0.0.1:5500/assets/irani1.jpg"
+                type:"سریال",
+                year:"1401",
+                like:"82%",
+            },
+            {
+                title:"روزی روزگاری مریخ",
+                Image:"http://127.0.0.1:5500/assets/irani2.jpg"
+                type:"سریال",
+                year:"1401",
+                like:"82%",
+            },
+            {
+                title:"۱۳ شمالی",
+                Image:"http://127.0.0.1:5500/assets/irani3.jpg"
+                type:"سریال",
+                year:"1401",
+                like:"82%",
+            },
+            {
+                title:"جادوگر",
+                Image:"http://127.0.0.1:5500/assets/irani4.jpg"
+                type:"سریال",
+                year:"1401",
+                like:"82%",
+            },
+            {
+                title:"نوبت لیلی",
+                Image:"http://127.0.0.1:5500/assets/irani5.jpg"
+                type:"سریال",
+                year:"1401",
+                like:"82%",
+            },
+            {
+                title:"مهمونی",
+                Image:"http://127.0.0.1:5500/assets/irani6.jpg"
+                type:"سریال",
+                year:"1401",
+                like:"82%",
+            },
+            {
+                title:"حرفه ای (ویژه ناشنوایان)",
+                Image:"http://127.0.0.1:5500/assets/irani7.jpg"
+                type:"سریال",
+                year:"1401",
+                like:"82%",
+            },
+            
+        ]
+    </script>
+</body>
+</html>
